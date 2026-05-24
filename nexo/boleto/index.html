@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamento</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>Pagamento</h1>
+        </header>
+
+        <section>
+
+            <form id="formulario">
+
+                <label for="codigoBarras">Código de Barras</label>
+                <input type="text" id="codigoBarras" placeholder="Digite o código de barras" minlength="44" maxlength="48" required>
+
+                <label for="valor">Valor</label>
+                <input type="text" id="valor" placeholder="Insira o valor" required>
+                <input type="hidden" id="valorLimpo">
+
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" placeholder="Insira uma descrição" required>
+                
+                <button id="botaoTransferir">Efetuar Pagamento</button>
+
+            </form>
+
+
+        </section>
+
+            <!--Tela/PopUp Senha -->
+            <dialog id="popupSenha">
+                <form method="dialog">
+                    <header>
+                        <h3>Confirme seu pagamento</h3>
+                    </header>
+
+                    <section class="popupSenha">
+                        <label for="senha">Insira sua senha</label>
+                        <input type="password" id="senha" maxlength="6">
+                    </section>
+
+                    <menu>
+                        <button id="confirmarTransferencia">Confirmar</button>
+                        <button id="botaoCancelar">Cancelar</button>
+                    </menu>
+                </form>
+            </dialog>
+            
+        <button id="botaotelaInicial" onclick="window.location.href='../telaInicial/index.html'">Ir para tela inicial</button>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Transferência Pix</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>PIX</h1>
+        </header>
+
+        <section>
+
+            <form id="formulario"> Selecione o tipo de chave Pix          
+                <select id="listatipochavePix" required>
+                    <option value="mensagemLista" disabled selected></option>
+                    <option value="cpf">CPF</option>
+                    <option value="cnpj">CNPJ</option>
+                    <option value="email">E-mail</option>
+                </select>
+
+                <label for="insiraChave">Insira a chave</label>
+                <input type="text" id="insiraChave" required>
+
+                <label for="valor">Valor</label>
+                <input type="text" id="valor" required>
+                <input type="hidden" id="valorLimpo">
+
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" placeholder="Insira uma descrição" required>
+                
+                <button id="botaoTransferir">Transferir</button>
+
+            </form>
+
+
+        </section>
+
+            <!--Tela/PopUp Senha -->
+            <dialog id="popupSenha">
+                <form method="dialog">
+                    <header>
+                        <h3>Confirme sua transferência</h3>
+                    </header>
+
+                    <section class="popupSenha">
+                        <label for="senha">Insira sua senha</label>
+                        <input type="password" id="senha" maxlength="6">
+                    </section>
+
+                    <menu>
+                        <button id="confirmarTransferencia">Confirmar</button>
+                        <button id="botaoCancelar">Cancelar</button>
+                    </menu>
+                </form>
+            </dialog>
+            
+        <button id="botaotelaInicial" onclick="window.location.href='../telaInicial/index.html'">Ir para tela inicial</button>
+
+    </main>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

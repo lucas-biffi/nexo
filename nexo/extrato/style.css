@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Calibri;
+    background-color: whitesmoke;
+}
+
+header{
+    color: black;
+    margin-bottom: 20px;
+    padding: 10px 0 24px 10px;
+    background-image: linear-gradient(to right,#00D3FF 0%, #40FF89 40%, #18E3D3 66%, #0BDBEA 84%);
+}
+
+.boxSaldo{
+    background-color: whitesmoke;
+    color: #555;
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2);
+    border: 2px gainsboro solid;
+    width: 226px;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listaExtrato{
+    background-color: white;
+    border: 2px gainsboro solid;
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 16px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.listaExtrato h2, #data{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+.boxValor{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    color: red;
+}
+
+.boxExtrato{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid gainsboro;
+    box-shadow: 2px 0 2px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right,#00D3FF 0%, #40FF89 40%, #18E3D3 66%, #0BDBEA 84%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 10px; 
+    left: 0; 
+    right: 0;
+    width: 100%; 
+    max-width: 1000px;
+    margin: 0 auto; 
+    z-index: 1000
+}
+
+.btnPagina{
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btnPagina:hover{
+    background-color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    
+    /* 1. Ajustes no Cabeçalho */
+    header {
+        padding: 15px 10px 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    header h1 {
+        font-size: 24px; 
+    }
+
+    /* 2. Ajustes no Bloco de Saldo */
+    .boxSaldo {
+        width: 100%; 
+        max-width: 280px;
+        padding: 12px;
+        margin-top: 12px;
+    }
+
+    .boxSaldo p {
+        font-size: 14px;
+    }
+
+    .boxSaldo h2 {
+        font-size: 20px;
+    }
+
+    /* 3. Área de Movimentações */
+    main h2 {
+        font-size: 18px; 
+        margin-bottom: 5px;
+    }
+
+    .boxExtrato {
+        margin-bottom: 90px; 
+    }
+
+    /* 4. Ajustes nos Itens do Extrato*/
+    .listaExtrato {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .listaExtrato h2 {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .data {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .valor h3 {
+        font-size: 15px;
+    }
+
+    /* 5. Menu Fixo no Rodapé Estilo Aplicativo */
+    .menu {
+        padding: 8px 4px;
+        border-radius: 15px 15px 0 0; 
+    }
+
+    /* 6. Botões do Menu */
+    .btnPagina {
+        width: auto;         
+        flex: 1;            
+        padding: 8px 2px;   
+        font-size: 12px;    
+        text-align: center;
+        white-space: nowrap; 
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Extrato</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Extrato</h1>
+        <div class="boxSaldo">
+            <p>Saldo disponível</p>
+            <h2 id="saldo">Carregando...</h2>
+        </div>
+    </header>
+
+    <main>
+
+        <h2>Últimas movimentações</h2>
+
+        <div class="boxExtrato"></div>
+            <li class="listaExtrato" style="list-style-type: none;">
+                <h2 id="descricao"></h2>
+                <p id="data"></p>
+                <div class="boxValor">
+                <h3 id="valor"></h3>
+            </li>
+        </div>
+        
+        <section class="menu">
+        <button class="btnPagina" onclick="window.location.href='../telaInicial/index.html'">Tela Inicial</button>
+        <button class="btnPagina" onclick="window.location.href='../pix/index.html'">Pix</button>
+        <button class="btnPagina"onclick="window.location.href='../boleto/index.html'">Boleto</button>
+        <button class="btnPagina" onclick="window.location.href='../cotacao/index.html'">Cotação</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

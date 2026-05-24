@@ -1,0 +1,115 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.container{
+  width: 100%;
+  max-width: 430px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
+  overflow-x: hidden;
+  border-radius: 20px;
+  min-height: 95vh;
+}
+
+.top{
+  border-bottom-right-radius: 45px;
+  padding: 20px 15px 15px 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 6px;
+  background: linear-gradient(141deg, rgb(0, 211, 255) 0%, rgb(64, 255, 137) 40%, rgb(24, 227, 211) 66%, rgb(11, 219, 234) 84%);
+}
+
+.sec_user{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.msg_user{
+  padding-left: 10px;
+}
+
+.sec_saldo{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 200px;
+  height: 65px;
+  border-radius: 10px;
+  flex-flow: column wrap;
+  padding-left: 10px;
+  place-content: flex-start space-between;
+}
+
+.sec_saldo p{
+  color: white;
+  margin: 5px 5px 5px 0px;
+}
+
+.sec_saldo strong{
+  color: white;
+  margin: 5px 5px 5px 0px;
+}
+
+.sec_saldo img{
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.img_cards{
+  padding-left: 5px;
+  padding-right: 5px
+}
+
+.txt_cards{
+  color: gray;
+}
+  
+.acoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: stretch;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  grid-auto-flow: row;
+  justify-content: stretch;
+  margin-top: 100px;
+  justify-items: center;
+  row-gap: 100px;
+}
+
+.btn_acoes {
+  width: 80px;
+  height: 75px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column-reverse;
+  place-items: center;
+  background-color: #a2ecf1;
+  border-radius: 10px;
+  place-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(1.7);
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.img_acoes  {
+  padding: 3px;
+  position: relative;
+  top: 11px;
+}
+
+.txt_acoes {
+  color: #00D3FF;
+  position: relative;
+  display: flex;
+  bottom: 80px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
